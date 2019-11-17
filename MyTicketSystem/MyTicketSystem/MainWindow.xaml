@@ -1,0 +1,58 @@
+﻿<Window x:Class="MyTicketSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyTicketSystem"
+        mc:Ignorable="d"
+        Title="航班查询及预定" Height="650" Width="700" Loaded="Window_Loaded">
+    <Grid>
+        <GroupBox x:Name="groupBox" Header="航班信息" HorizontalAlignment="Left" Height="305" Margin="10,10,0,0" VerticalAlignment="Top" Width="674">
+
+            <Grid>
+                <Label x:Name="label" Content="出发的:" HorizontalAlignment="Left" Margin="36,10,0,0" VerticalAlignment="Top"/>
+                <ComboBox x:Name="cboLeaveCity" HorizontalAlignment="Left" Margin="98,10,0,0" VerticalAlignment="Top" Width="120" Height="26"/>
+                <Label x:Name="label1" Content="目的地:" HorizontalAlignment="Left" Margin="256,10,0,0" VerticalAlignment="Top"/>
+                <ComboBox x:Name="cboDestination" HorizontalAlignment="Left" Margin="321,10,0,0" VerticalAlignment="Top" Width="120" Height="26"/>
+                <Button x:Name="but_select" Content="查询" HorizontalAlignment="Left" Margin="553,10,0,0" VerticalAlignment="Top" Width="75" Height="28" Click="But_select_Click"/>
+                <DataGrid x:Name="dataGrid" IsReadOnly="True" HorizontalAlignment="Left" AutoGenerateColumns="False" Height="229" Margin="36,54,0,0" VerticalAlignment="Top" Width="592" SelectionMode="Single" MouseDown="DataGrid_MouseDown" SelectionChanged="DataGrid_SelectionChanged">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn x:Name="flihtNo" Header="航班号" Width="118" Binding="{Binding flightNo}"/>
+                        <DataGridTextColumn x:Name="airWay" Header="航空公司" Width="118" Binding="{Binding airways}"/>
+                        <DataGridTextColumn x:Name="leaveTime" Header="出发时间" Width="118" Binding="{Binding leaveTime}"/>
+                        <DataGridTextColumn x:Name="desTime" Header="到达时间" Width="118" Binding="{Binding landTime}"/>
+                        <DataGridTextColumn x:Name="price" Header="成人票价" Width="118" Binding="{Binding price}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="groupBox1" Header="航空预定" HorizontalAlignment="Left" Height="201" Margin="10,320,0,0" VerticalAlignment="Top" Width="674">
+            <Grid HorizontalAlignment="Left" Height="186" Margin="0,0,-3.2,0" VerticalAlignment="Top" Width="664">
+                <Label x:Name="lbl_flihtNo" Content="航班号" HorizontalAlignment="Left" Margin="29,20,0,0" VerticalAlignment="Top" Height="23"/>
+                <TextBox x:Name="txt_flihtNo" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="98,20,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <Label x:Name="lbl_leave" Content="出发地" HorizontalAlignment="Left" Margin="29,48,0,0" VerticalAlignment="Top" Height="23"/>
+                <Label x:Name="lbl_leaveTime" Content="出发时间" HorizontalAlignment="Left" Margin="29,80,0,0" VerticalAlignment="Top" Height="23"/>
+                <Label x:Name="lbl_price" Content="成人票价" HorizontalAlignment="Left" Margin="29,119,0,0" VerticalAlignment="Top" Height="23"/>
+                <Label x:Name="lbl_quantity" Content="预定数量" HorizontalAlignment="Left" Margin="29,151,0,0" VerticalAlignment="Top" Height="23"/>
+                <TextBox x:Name="txt_leave" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="98,52,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="txt_leaveTime" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="98,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="txt_price" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="98,119,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <Label x:Name="lbl_airWay" Content="航空公司" HorizontalAlignment="Left" Margin="362,20,0,0" VerticalAlignment="Top" Height="23"/>
+                <TextBox x:Name="textBox_Copy3" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="437,20,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <Label x:Name="lbl_destination" Content="目的地" HorizontalAlignment="Left" Margin="362,52,0,0" VerticalAlignment="Top" Height="23"/>
+                <Label x:Name="label2_Copy6" Content="到达时间" HorizontalAlignment="Left" Margin="362,80,0,0" VerticalAlignment="Top" Height="23"/>
+                <TextBox x:Name="txt_destination" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="437,52,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="txt_desTime" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="437,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <Label x:Name="label2_Copy7" Content="出发日期" HorizontalAlignment="Left" Margin="362,151,0,0" VerticalAlignment="Top" Height="23" RenderTransformOrigin="0.59,2.565"/>
+                <DatePicker Name="time" HorizontalAlignment="Left" Margin="437,152,0,0" VerticalAlignment="Top" Width="120" Height="23" RenderTransformOrigin="0.368,-0.73"/>
+                <TextBox x:Name="txt_quantity" IsReadOnly="False" HorizontalAlignment="Left" Height="23" Margin="98,151,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="120"/>
+                <Button x:Name="button1" Content="↑" HorizontalAlignment="Left" Margin="202,151,0,0" VerticalAlignment="Top" Width="16" Height="12" Click="Button1_Click"/>
+                <Button x:Name="button1_Copy" Content="↓" HorizontalAlignment="Left" Margin="202,163,0,0" VerticalAlignment="Top" Width="16" Height="11" Click="Button1_Copy_Click"/>
+            </Grid>
+        </GroupBox>
+        <Button x:Name="button" Content="预定" HorizontalAlignment="Left" Margin="462,551,0,0" VerticalAlignment="Top" Width="75" Height="30" Click="Button_Click"/>
+        <Button x:Name="button_Copy" Content="关闭" HorizontalAlignment="Left" Margin="578,551,0,0" VerticalAlignment="Top" Width="75" Height="30" Click="Button_Copy_Click"/>
+
+
+    </Grid>
+</Window>

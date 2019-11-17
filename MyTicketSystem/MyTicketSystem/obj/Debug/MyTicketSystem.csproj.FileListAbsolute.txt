@@ -1,0 +1,15 @@
+D:\wpf存档\航班查询及预定\MyTicketSystem\MyTicketSystem\obj\Debug\MyTicketSystem.csprojAssemblyReference.cache
+D:\wpf存档\航班查询及预定\MyTicketSystem\MyTicketSystem\obj\Debug\App.g.cs
+D:\wpf存档\航班查询及预定\MyTicketSystem\MyTicketSystem\obj\Debug\MyTicketSystem_MarkupCompile.cache
+D:\wpf存档\航班查询及预定\MyTicketSystem\MyTicketSystem\bin\Debug\MyTicketSystem.exe.config
+D:\wpf存档\航班查询及预定\MyTicketSystem\MyTicketSystem\bin\Debug\MyTicketSystem.exe
+D:\wpf存档\航班查询及预定\MyTicketSystem\MyTicketSystem\bin\Debug\MyTicketSystem.pdb
+D:\wpf存档\航班查询及预定\MyTicketSystem\MyTicketSystem\obj\Debug\MainWindow.g.cs
+D:\wpf存档\航班查询及预定\MyTicketSystem\MyTicketSystem\obj\Debug\MyTicketSystem_MarkupCompile.lref
+D:\wpf存档\航班查询及预定\MyTicketSystem\MyTicketSystem\obj\Debug\MainWindow.baml
+D:\wpf存档\航班查询及预定\MyTicketSystem\MyTicketSystem\obj\Debug\MyTicketSystem.g.resources
+D:\wpf存档\航班查询及预定\MyTicketSystem\MyTicketSystem\obj\Debug\MyTicketSystem.Properties.Resources.resources
+D:\wpf存档\航班查询及预定\MyTicketSystem\MyTicketSystem\obj\Debug\MyTicketSystem.csproj.GenerateResource.cache
+D:\wpf存档\航班查询及预定\MyTicketSystem\MyTicketSystem\obj\Debug\MyTicketSystem.csproj.CoreCompileInputs.cache
+D:\wpf存档\航班查询及预定\MyTicketSystem\MyTicketSystem\obj\Debug\MyTicketSystem.exe
+D:\wpf存档\航班查询及预定\MyTicketSystem\MyTicketSystem\obj\Debug\MyTicketSystem.pdb
